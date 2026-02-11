@@ -21,11 +21,14 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 
 ## Dokumentacja
 
-- Aktualizuj `README.md`, jeśli zmiana wpływa na uruchamianie lub użycie projektu.
-- Szczegóły techniczne integracji (np. API, tokeny, workflow agenta) zapisuj w `docs/`, nie w `README.md`.
+- Dla agenta źródłem prawdy są pliki `AGENTS.md`.
+- Szczegóły techniczne integracji (np. API, tokeny, workflow agenta) zapisuj w `docs/`.
 - Indeks dokumentacji technicznej znajduje się w `docs/AGENTS.md` (tam szukaj informacji, co jest w `docs/` i po co).
 - Specyfikacji funkcjonalności szukaj w `docs/ai-specs/`, a ich indeks i zasady w `docs/ai-specs/AGENTS.md`.
+- Runbooków operacyjnych szukaj w `docs/ai-runbooks/`, a ich indeks i zasady w `docs/ai-runbooks/AGENTS.md`.
 - Nazwy plików instrukcji zapisuj dokładnie jako `AGENTS.md` (wielkie `AGENTS`, małe `.md`).
+- W plikach `AGENTS.md` nie twórz odniesień do plików `README.md`.
+- W każdym folderze projektu powinien istnieć plik `README.md` opisujący zawartość folderu oraz informacje o podkatalogach.
 - Dodawaj krótkie komentarze tylko tam, gdzie logika nie jest oczywista.
 
 ## Komunikacja zmian

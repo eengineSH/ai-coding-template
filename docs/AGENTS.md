@@ -5,7 +5,7 @@ Ten plik opisuje zawartość katalogu `docs/` i wskazuje, gdzie szukać informac
 ## Cel katalogu `docs/`
 
 - Przechowywanie dokumentacji technicznej i operacyjnej projektu.
-- Oddzielenie dokumentacji dla agentów/utrzymania od onboardingowego `README.md`.
+- Utrzymanie dokumentacji operacyjnej dla agentów w jednym miejscu.
 
 ## Zawartość
 
@@ -18,6 +18,9 @@ Ten plik opisuje zawartość katalogu `docs/` i wskazuje, gdzie szukać informac
 - `docs/ai-specs/AGENTS.md`
   - Indeks specyfikacji funkcjonalności przygotowywanych do implementacji.
   - Zawiera mapę plików specyfikacji i zasady ich tworzenia.
+- `docs/ai-runbooks/AGENTS.md`
+  - Indeks runbooków operacyjnych.
+  - Zawiera mapę plików runbooków i zasady ich tworzenia.
 
 ## Zasady aktualizacji
 

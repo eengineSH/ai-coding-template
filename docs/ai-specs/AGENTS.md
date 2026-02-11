@@ -6,6 +6,7 @@ Ten plik jest mapą specyfikacji AI dla funkcjonalności projektu.
 
 - Przechowywanie specyfikacji funkcjonalnych przygotowywanych do implementacji.
 - Utrzymanie jednego miejsca, w którym agent wie, jak znaleźć i tworzyć specyfikacje.
+- Procedury operacyjne (runbooki) są utrzymywane osobno w `docs/ai-runbooks/`.
 
 ## Mapa plików
 
