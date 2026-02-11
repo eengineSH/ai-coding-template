@@ -1,13 +1,18 @@
 # Forgejo API - notatki robocze (issues)
 
-## Instancja
+## Instrukcja
 
-- URL: `https://git.iphoenix.pl`
-- Repo: `https://git.iphoenix.pl/fizol/ai-coding-template`
-- Owner: `fizol`
-- Nazwa repo: `ai-coding-template`
 - Oprogramowanie: `Forgejo`
 - Wersja: `13.0.2+gitea-1.22.0`
+
+Jak pobrać token API w Forgejo:
+
+1. Kliknij avatar (prawy górny róg) -> `Settings`.
+2. Wejdź w `Applications`.
+3. W sekcji tokenów wybierz `Generate New Token`.
+4. Podaj nazwę tokena i zaznacz wymagane scope.
+5. Zatwierdź `Generate Token`.
+6. Skopiuj token od razu po wygenerowaniu.
 
 ## Zakres użycia
 
