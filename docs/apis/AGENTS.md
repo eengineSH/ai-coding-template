@@ -15,6 +15,8 @@ Ten plik jest mapą dokumentacji integracji API.
   - Dokumenty integracji API (jeden plik na integrację lub obszar).
 - `docs/apis/Forgejo-API.md`
   - Notatki operacyjne i konfiguracja integracji z Forgejo API.
+- `docs/apis/GitHub-API.md`
+  - Notatki operacyjne i konfiguracja integracji z GitHub API.
 
 ## Zasady prowadzenia dokumentacji API
 

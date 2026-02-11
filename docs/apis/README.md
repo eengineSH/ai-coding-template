@@ -6,6 +6,7 @@ Katalog zawiera dokumentację integracji API używanych w projekcie.
 
 - `AGENTS.md` - zasady prowadzenia dokumentacji API i mapa plików.
 - `Forgejo-API.md` - dokumentacja operacyjna integracji z Forgejo API.
+- `GitHub-API.md` - dokumentacja operacyjna integracji z GitHub API.
 - `*.md` - kolejne dokumenty integracji API.
 
 ## Jak używać

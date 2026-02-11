@@ -15,6 +15,7 @@ Ten plik opisuje zawartość katalogu `docs/` i wskazuje, gdzie szukać informac
 - `docs/apis/AGENTS.md`
   - Indeks dokumentacji integracji API.
   - Zawiera mapę plików API i zasady prowadzenia dokumentacji API.
+  - Obejmuje dokumentację `Forgejo-API.md` i `GitHub-API.md`.
 - `docs/specs/AGENTS.md`
   - Indeks specyfikacji funkcjonalności przygotowywanych do implementacji.
   - Zawiera mapę plików specyfikacji i zasady ich tworzenia.
