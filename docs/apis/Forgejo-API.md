@@ -55,6 +55,10 @@ Dostępne komendy:
 - `scripts/forgejo-issues.sh issue-open <nr>`
 - `scripts/forgejo-issues.sh issue-close <nr>`
 
+Uwagi praktyczne:
+
+- `issue-get` zwraca `assignees` i `labels` jako puste listy, gdy API zwróci `null` dla tych pól.
+
 ## Przydatne endpointy API
 
 - `GET /user`

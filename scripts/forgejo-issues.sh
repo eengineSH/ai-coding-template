@@ -69,7 +69,7 @@ case "$command_name" in
     ;;
   issue-get)
     number="${1:?Podaj numer issue}"
-    api GET "${REPO_PATH}/issues/${number}" | jq '{number, title, body, state, user: .user.login, assignees: [.assignees[].login], labels: [.labels[].name], updated_at}'
+    api GET "${REPO_PATH}/issues/${number}" | jq '{number, title, body, state, user: .user.login, assignees: [(.assignees // [])[]?.login], labels: [(.labels // [])[]?.name], updated_at}'
     ;;
   issue-create)
     title="${1:?Podaj tytul issue}"
