@@ -22,6 +22,7 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 ## Dokumentacja
 
 - Dla agenta źródłem prawdy są pliki `AGENTS.md`.
+- Informacje dla agentów zapisuj w `AGENTS.md` najbliższym zakresowi danej funkcji/obszaru; globalny `AGENTS.md` traktuj jako miejsce na zasady przekrojowe, gdy nie ma bardziej adekwatnego pliku.
 - Szczegóły techniczne integracji (np. API, tokeny, workflow agenta) zapisuj w `docs/`.
 - Indeks dokumentacji technicznej znajduje się w `docs/AGENTS.md` (tam szukaj informacji, co jest w `docs/` i po co).
 - Specyfikacji funkcjonalności szukaj w `docs/ai-specs/`, a ich indeks i zasady w `docs/ai-specs/AGENTS.md`.
