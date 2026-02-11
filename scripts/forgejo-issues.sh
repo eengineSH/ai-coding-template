@@ -14,8 +14,8 @@ Uzycie:
 
 Wymagane zmienne srodowiskowe:
   FORGEJO_BASE_URL  np. https://git.iphoenix.pl
-  FORGEJO_OWNER     np. Phoenix
-  FORGEJO_REPO      np. TEST-Repo
+  FORGEJO_OWNER     np. fizol
+  FORGEJO_REPO      np. ai-coding-template
   FORGEJO_TOKEN     token API Forgejo
 USAGE
   exit 0
