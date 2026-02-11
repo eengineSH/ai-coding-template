@@ -1,18 +1,18 @@
-# AGENTS - docs/ai-runbooks
+# AGENTS - docs/runbooks
 
 Ten plik jest mapą instrukcji operacyjnych (runbooków) dla agenta.
 
-## Cel katalogu `docs/ai-runbooks/`
+## Cel katalogu `docs/runbooks/`
 
 - Przechowywanie powtarzalnych procedur operacyjnych.
 - Standaryzacja działań technicznych wykonywanych wielokrotnie.
-- Specyfikacje funkcjonalności są utrzymywane osobno w `docs/ai-specs/`.
+- Specyfikacje funkcjonalności są utrzymywane osobno w `docs/specs/`.
 
 ## Mapa plików
 
-- `docs/ai-runbooks/AGENTS.md`
+- `docs/runbooks/AGENTS.md`
   - Indeks i zasady tworzenia runbooków.
-- `docs/ai-runbooks/*.md`
+- `docs/runbooks/*.md`
   - Poszczególne runbooki (jeden plik na jeden proces/obszar).
 
 ## Zasady tworzenia runbooków

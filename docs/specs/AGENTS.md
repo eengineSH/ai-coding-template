@@ -1,18 +1,18 @@
-# AGENTS - docs/ai-specs
+# AGENTS - docs/specs
 
 Ten plik jest mapą specyfikacji AI dla funkcjonalności projektu.
 
-## Cel katalogu `docs/ai-specs/`
+## Cel katalogu `docs/specs/`
 
 - Przechowywanie specyfikacji funkcjonalnych przygotowywanych do implementacji.
 - Utrzymanie jednego miejsca, w którym agent wie, jak znaleźć i tworzyć specyfikacje.
-- Procedury operacyjne (runbooki) są utrzymywane osobno w `docs/ai-runbooks/`.
+- Procedury operacyjne (runbooki) są utrzymywane osobno w `docs/runbooks/`.
 
 ## Mapa plików
 
-- `docs/ai-specs/AGENTS.md`
+- `docs/specs/AGENTS.md`
   - Indeks i zasady tworzenia specyfikacji.
-- `docs/ai-specs/*.md`
+- `docs/specs/*.md`
   - Właściwe specyfikacje funkcjonalności (po jednym pliku na funkcjonalność).
 
 ## Zasady tworzenia specyfikacji

@@ -4,7 +4,9 @@ Ten folder zawiera uporządkowaną dokumentację i wiedzę o repozytorium.
 
 ## Spis treści
 
-- `ai-specs/`
+- `apis/`
+  - dokumentacja integracji API (konfiguracja, endpointy, operacje)
+- `specs/`
   - specyfikacje zmian (gdy nie są prowadzone jako komentarz do issue na Forgejo)
-- `ai-runbooks/`
+- `runbooks/`
   - instrukcje operacyjne dla agenta (jak wykonywać powtarzalne czynności)

@@ -12,13 +12,13 @@ Ten plik opisuje zawartość katalogu `docs/` i wskazuje, gdzie szukać informac
 - `docs/AGENTS.md`
   - Indeks dokumentacji technicznej w `docs/`.
   - Opisuje co, gdzie i po co znajduje się w tym katalogu.
-- `docs/Forgejo-API.md`
-  - Notatki operacyjne dotyczące integracji z Forgejo API.
-  - Zawiera konfigurację środowiska, wymagane narzędzia, komendy skryptu i endpointy dla issues.
-- `docs/ai-specs/AGENTS.md`
+- `docs/apis/AGENTS.md`
+  - Indeks dokumentacji integracji API.
+  - Zawiera mapę plików API i zasady prowadzenia dokumentacji API.
+- `docs/specs/AGENTS.md`
   - Indeks specyfikacji funkcjonalności przygotowywanych do implementacji.
   - Zawiera mapę plików specyfikacji i zasady ich tworzenia.
-- `docs/ai-runbooks/AGENTS.md`
+- `docs/runbooks/AGENTS.md`
   - Indeks runbooków operacyjnych.
   - Zawiera mapę plików runbooków i zasady ich tworzenia.
 

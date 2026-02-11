@@ -1,4 +1,4 @@
-# ai-specs
+# specs
 
 Katalog zawiera specyfikacje funkcjonalności przygotowywane pod implementację.
 

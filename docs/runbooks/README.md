@@ -1,4 +1,4 @@
-# ai-runbooks
+# runbooks
 
 Katalog zawiera runbooki, czyli powtarzalne instrukcje operacyjne dla agenta.
 

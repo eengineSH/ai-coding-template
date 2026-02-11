@@ -25,8 +25,9 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 - Informacje dla agentów zapisuj w `AGENTS.md` najbliższym zakresowi danej funkcji/obszaru; globalny `AGENTS.md` traktuj jako miejsce na zasady przekrojowe, gdy nie ma bardziej adekwatnego pliku.
 - Szczegóły techniczne integracji (np. API, tokeny, workflow agenta) zapisuj w `docs/`.
 - Indeks dokumentacji technicznej znajduje się w `docs/AGENTS.md` (tam szukaj informacji, co jest w `docs/` i po co).
-- Specyfikacji funkcjonalności szukaj w `docs/ai-specs/`, a ich indeks i zasady w `docs/ai-specs/AGENTS.md`.
-- Runbooków operacyjnych szukaj w `docs/ai-runbooks/`, a ich indeks i zasady w `docs/ai-runbooks/AGENTS.md`.
+- Dokumentacji integracji API szukaj w `docs/apis/`, a ich indeks i zasady w `docs/apis/AGENTS.md`.
+- Specyfikacji funkcjonalności szukaj w `docs/specs/`, a ich indeks i zasady w `docs/specs/AGENTS.md`.
+- Runbooków operacyjnych szukaj w `docs/runbooks/`, a ich indeks i zasady w `docs/runbooks/AGENTS.md`.
 - Nazwy plików instrukcji zapisuj dokładnie jako `AGENTS.md` (wielkie `AGENTS`, małe `.md`).
 - W plikach `AGENTS.md` nie twórz odniesień do plików `README.md`.
 - W każdym folderze projektu powinien istnieć plik `README.md` opisujący zawartość folderu oraz informacje o podkatalogach.
@@ -92,9 +93,9 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 
 ### Specyfikacje a issue
 
-- Jeśli zadanie ma issue na Forgejo i wymaga specyfikacji, to specyfikacja ma powstać jako komentarz do danego issue (nie w `docs/ai-specs/`).
+- Jeśli zadanie ma issue na Forgejo i wymaga specyfikacji, to specyfikacja ma powstać jako komentarz do danego issue (nie w `docs/specs/`).
 - Jeśli specyfikacja jest w komentarzu i prosisz o jej poprawę, edytuję istniejący komentarz (nie dodaję nowego).
-- Jeśli nie ma issue, a potrzebna jest specyfikacja, to najpierw pytam gdzie ją umieścić (issue vs `docs/ai-specs/`) i czy wcześniej nie założyć pod to nowego issue.
+- Jeśli nie ma issue, a potrzebna jest specyfikacja, to najpierw pytam gdzie ją umieścić (issue vs `docs/specs/`) i czy wcześniej nie założyć pod to nowego issue.
 
 ### Issue (tworzenie i triage)
 
