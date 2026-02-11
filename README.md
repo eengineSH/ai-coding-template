@@ -1,4 +1,4 @@
-# TEST-Repo
+# ai-coding-template
 
 Minimalne repozytorium startowe do eksperymentów i szybkiego prototypowania.
 

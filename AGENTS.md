@@ -70,7 +70,7 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 
 ### Repozytorium i narzędzia
 
-- Adres HTTPS repozytorium: `https://git.iphoenix.pl/Phoenix/TEST-Repo`.
+- Adres HTTPS repozytorium: `https://git.iphoenix.pl/fizol/ai-coding-template`.
 - Oprogramowanie hostujące: `Forgejo`.
 - Wersja Forgejo: `13.0.2+gitea-1.22.0`.
 - Operacje na issues wykonujemy przez API Forgejo (skrypt `scripts/forgejo-issues.sh`).
