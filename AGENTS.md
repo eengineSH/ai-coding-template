@@ -70,12 +70,11 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 
 ### Repozytorium i narzędzia
 
-- Adres HTTPS repozytorium: `https://git.iphoenix.pl/fizol/ai-coding-template`.
-- Oprogramowanie hostujące: `Forgejo`.
-- Wersja Forgejo: `13.0.2+gitea-1.22.0`.
+- Główne repozytorium (origin): `https://github.com/eengineSH/ai-coding-template`.
+- Oprogramowanie hostujące (origin): `GitHub`.
 - Operacje na issues wykonujemy przez API:
-  - Forgejo: `scripts/forgejo-issues.sh`
-  - GitHub: `scripts/github-issues.sh`
+  - GitHub (domyślnie): `scripts/github-issues.sh`
+  - Forgejo (gdy dotyczy repo na Forgejo): `scripts/forgejo-issues.sh`
 
 ### Skróty poleceń
 
