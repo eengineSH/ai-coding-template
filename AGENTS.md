@@ -107,5 +107,6 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 - Domyślnie pracuję na branchu i zmiany wchodzą do `main` przez Pull Request.
 - Poza sytuacjami wyjątkowymi nie robię commitów bezpośrednio do `main`.
   - jeśli człowiek prosi o commit/push do `main`, traktuję to jako nadpisanie tej zasady (patrz zasada `Nadpisywanie wytycznych`)
+- Każdy commit przygotowuję jako możliwie mały i atomowy; zasada dotyczy także commitów inicjowanych skrótami (`c`, `c+p`, `c+p+pr`).
 - Każdy commit ma nazwę i krótki opis zmian.
 - Opis commita zawiera informację, na podstawie jakiej specyfikacji wykonano pracę (plik/spec lub issue) i zawiera do niej odniesienie.
