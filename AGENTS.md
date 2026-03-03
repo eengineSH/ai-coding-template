@@ -79,11 +79,13 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 ### Skróty poleceń
 
 - `c`
-  - commit (bez push)
+  - przygotowanie i wykonanie atomowych commitów (bez push)
 - `c+p`
-  - commit i push
+  - przygotowanie i wykonanie atomowych commitów
+  - jeden push po przygotowaniu całej serii commitów
 - `c+p+pr`
-  - commit i push
+  - przygotowanie i wykonanie atomowych commitów
+  - jeden push po przygotowaniu całej serii commitów
   - utworzenie PR
 - `rc #NNN`
   - przejrzenie komentarzy w PR `#NNN`
@@ -109,3 +111,13 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
   - jeśli człowiek prosi o commit/push do `main`, traktuję to jako nadpisanie tej zasady (patrz zasada `Nadpisywanie wytycznych`)
 - Każdy commit ma nazwę i krótki opis zmian.
 - Opis commita zawiera informację, na podstawie jakiej specyfikacji wykonano pracę (plik/spec lub issue) i zawiera do niej odniesienie.
+
+### Workflow commitów (implementacja issue #12)
+
+- Dla poleceń `c`, `c+p`, `c+p+pr` najpierw analizuję pełny diff i wyodrębniam grupy zmian według jednego celu logicznego.
+- Jeśli zmiany obejmują więcej niż jeden niezależny cel, przygotowuję co najmniej dwa osobne commity.
+- Każdy commit zawiera tylko pliki/hunki związane z jednym celem; nie łączę bez uzasadnienia `fix + refaktor + docs`.
+- Jeden commit jest dopuszczalny tylko dla zmian nierozdzielnych albo dotyczących jednego celu.
+- Preferowana kolejność commitów: refaktor przygotowawczy -> zmiana funkcjonalna (fix/feature) -> dokumentacja/kosmetyka.
+- Jeśli część zmian jest WIP lub nie nadaje się do bezpiecznego commita, zostawiam je poza commitami i jawnie raportuję to w podsumowaniu.
+- W podsumowaniu po wykonaniu polecenia commitowego podaję listę utworzonych commitów i krótkie uzasadnienie podziału.

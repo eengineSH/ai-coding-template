@@ -12,6 +12,8 @@ Ten plik jest mapą instrukcji operacyjnych (runbooków) dla agenta.
 
 - `docs/runbooks/AGENTS.md`
   - Indeks i zasady tworzenia runbooków.
+- `docs/runbooks/atomowe-commity.md`
+  - Procedura dzielenia zmian na atomowe, logiczne commity (issue `#12`).
 - `docs/runbooks/*.md`
   - Poszczególne runbooki (jeden plik na jeden proces/obszar).
 
