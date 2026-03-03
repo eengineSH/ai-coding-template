@@ -12,6 +12,8 @@ Ten plik jest mapą specyfikacji AI dla funkcjonalności projektu.
 
 - `docs/specs/AGENTS.md`
   - Indeks i zasady tworzenia specyfikacji.
+- `docs/specs/atomowe-commity.md`
+  - Specyfikacja workflow dzielenia zmian na atomowe, logiczne commity.
 - `docs/specs/*.md`
   - Właściwe specyfikacje funkcjonalności (po jednym pliku na funkcjonalność).
 
