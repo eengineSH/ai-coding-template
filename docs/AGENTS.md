@@ -22,8 +22,11 @@ Ten plik opisuje zawartość katalogu `docs/` i wskazuje, gdzie szukać informac
 - `docs/runbooks/AGENTS.md`
   - Indeks runbooków operacyjnych.
   - Zawiera mapę plików runbooków i zasady ich tworzenia.
+- `docs/followups.md`
+  - Lista otwartych follow-upów i tematów do sprawdzenia przy starcie nowego kontekstu pracy agenta.
 
 ## Zasady aktualizacji
 
 - Gdy dodajesz nowy plik do `docs/`, dopisz go w sekcji "Zawartość".
 - Zachowuj opisy krótkie i praktyczne: co to jest, gdzie jest i do czego służy.
+- Unikaj duplikatów semantycznych między plikami `AGENTS.md` i pozostałą dokumentacją.

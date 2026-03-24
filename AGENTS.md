@@ -13,6 +13,12 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 - Nie modyfikuj plików niezwiązanych z zadaniem.
 - Nie usuwaj istniejącej funkcjonalności bez wyraźnego powodu i opisu.
 
+## Start pracy i źródła danych
+
+- Przy każdym starcie nowego kontekstu najpierw sprawdź `docs/followups.md` (jeśli plik istnieje w repo).
+- Jeśli dla danego zadania istnieje odpowiedni serwer MCP, użyj go jako domyślnej i pierwszej ścieżki pozyskania danych lub wykonania operacji.
+- Inne metody (API bezpośrednie, SQL, SSH itp.) stosuj dopiero wtedy, gdy MCP nie dostarcza wymaganych danych albo nie pozwala wykonać zadania.
+
 ## Jakość zmian
 
 - Preferuj czytelność i prostotę nad nadmierną złożonością.
@@ -30,6 +36,7 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 - Runbooków operacyjnych szukaj w `docs/runbooks/`, a ich indeks i zasady w `docs/runbooks/AGENTS.md`.
 - Nazwy plików instrukcji zapisuj dokładnie jako `AGENTS.md` (wielkie `AGENTS`, małe `.md`).
 - W plikach `AGENTS.md` nie twórz odniesień do plików `README.md`.
+- W plikach `AGENTS.md` i dokumentacji unikaj duplikatów semantycznych; wpisy mają być zwięzłe i konkretne.
 - W każdym folderze projektu powinien istnieć plik `README.md` opisujący zawartość folderu oraz informacje o podkatalogach.
 - Dodawaj krótkie komentarze tylko tam, gdzie logika nie jest oczywista.
 
