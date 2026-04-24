@@ -15,34 +15,75 @@ Repozytorium startowe dla projektów, w których człowiek i agenci AI mają pra
 
 ## Szybki start
 
-1. Sklonuj repozytorium albo użyj go jako template’u.
-2. Podmień nazwę projektu, ownera i repozytorium w plikach konfiguracyjnych oraz dokumentacji.
-3. Zdecyduj, czy projekt używa GitHub, Forgejo czy obu integracji.
-4. Uzupełnij `.env.example` o właściwe zmienne dla projektu.
-5. Usuń integracje, których projekt nie będzie używał.
-6. Dopisz pierwszą specyfikację w `docs/specs/` albo podlinkuj issue, jeśli praca startuje z issue.
-7. Uzupełnij sekcję "Uruchomienie" o konkretne komendy projektu.
-8. Dodaj testy i CI, jeśli projekt będzie rozwijany długoterminowo.
+Najprostszy sposób użycia tego repo polega na wkomponowaniu template’u w realne repo projektu przez agenta AI.
+
+1. Utwórz nowe repozytorium projektu na GitHubie albo użyj istniejącego repozytorium.
+2. Sklonuj repozytorium projektu na dysk lokalny.
+3. Otwórz lokalne repozytorium w edytorze z agentem kodującym, np. Visual Studio Code z Codexem albo analogicznym narzędziem.
+4. Uruchom agenta w katalogu docelowego repozytorium.
+5. Przekaż agentowi polecenie:
+
+```text
+Przeanalizuj bieżące repozytorium i wkomponuj w nie szablon pracy agentowej z https://github.com/eengineSH/ai-coding-template.
+
+Zachowaj istniejącą strukturę i nie nadpisuj ręcznych zmian bez pytania. Dopasuj pliki AGENTS.md, README.md, .github, docs i scripts do technologii, hostingu, procesu pracy i zasad tego projektu. Usuń elementy template’u, które nie mają zastosowania. W miejscach wymagających decyzji człowieka zatrzymaj się i zadaj jedno konkretne pytanie naraz.
+```
+
+6. Po adaptacji przejrzyj zmiany z agentem.
+7. Usuń albo doprecyzuj wszystkie placeholdery, które nie mają realnego znaczenia w projekcie.
+8. Zacommituj dopiero zaakceptowany zakres.
+
+Alternatywnie możesz użyć GitHuba i opcji "Use this template", jeśli tworzysz repo od zera i chcesz świadomie zacząć od tej struktury bez automatycznej adaptacji do istniejącego kodu.
 
 ## Adaptacja do projektu
 
+Podczas adaptacji nie chodzi o mechaniczne skopiowanie wszystkich plików. Celem jest dopasowanie zasad pracy agentowej do konkretnego projektu.
+
 1. `AGENTS.md`
-   - zostaw tylko zasady, które mają obowiązywać w danym projekcie
-   - przenieś lokalne zasady do najbliższego folderu, którego dotyczą
+   a) zostaw tylko zasady, które mają obowiązywać w projekcie
+   b) dopisz język komunikacji, git flow, zasady commitów, proces specyfikacji i ograniczenia środowiskowe
+   c) przenieś zasady lokalne do najbliższego folderu, którego dotyczą
+   d) unikaj duplikatów semantycznych między głównym `AGENTS.md` i plikami podrzędnymi
 2. `.github/`
-   - dopasuj szablony issue, PR i instrukcje Copilota do technologii projektu
-   - usuń sekcje, które nie mają zastosowania
+   a) dopasuj szablony issue do realnego procesu triage
+   b) dopasuj Pull Request template do wymaganej weryfikacji
+   c) uzupełnij instrukcje Copilota o technologie, wersje środowiska i zasady code review
+   d) usuń `CODEOWNERS`, `SECURITY.md`, `SUPPORT.md`, Dependabot albo inne pliki, jeśli projekt nie ma dla nich realnej treści
 3. `docs/specs/`
-   - trzymaj kompletne specyfikacje zmian, jeśli projekt wymaga specyfikowania przed kodowaniem
+   a) zostaw, jeśli projekt wymaga specyfikacji przed implementacją
+   b) ustal schemat numeracji i kryteria akceptacji
+   c) usuń katalog, jeśli projekt prowadzi specyfikacje wyłącznie w issue
 4. `docs/runbooks/`
-   - dopisuj tylko powtarzalne procedury, które naprawdę będą używane
-5. `docs/skills/`
-   - zostaw puste, dopóki projekt nie potrzebuje własnych skilli agenta
+   a) dopisuj tylko powtarzalne procedury, które naprawdę będą używane
+   b) usuwaj runbooki generyczne, jeśli nie pasują do procesu projektu
+5. `docs/apis/`
+   a) zostaw dokumentację tylko tych integracji, których projekt używa
+   b) usuń GitHub albo Forgejo, jeśli nie są potrzebne
+6. `docs/skills/`
+   a) zostaw puste, dopóki projekt nie potrzebuje własnych skilli agenta
+   b) dodawaj skille dopiero dla powtarzalnych workflow
+7. `scripts/`
+   a) zostaw helpery, które będą realnie używane
+   b) usuń skrypty związane z niewykorzystywanymi integracjami
+8. `.env.example`
+   a) uzupełnij tylko zmienne konfiguracyjne bez sekretów
+   b) usuń zmienne dla nieużywanych integracji
 
 ## Uruchomienie
 
-Brak zdefiniowanej aplikacji na tym etapie. Uzupełnij tę sekcję po dodaniu kodu.
+Ten template nie definiuje aplikacji do uruchomienia. Po adaptacji do projektu ta sekcja w repo docelowym powinna zostać zastąpiona konkretną instrukcją.
+
+Minimalnie opisz:
+
+1. wymagane wersje języka, runtime’u, bazy i narzędzi
+2. sposób instalacji zależności
+3. sposób przygotowania konfiguracji lokalnej
+4. komendę startu aplikacji
+5. komendy testów, linterów i podstawowej walidacji
+6. najważniejsze URL-e albo entrypointy lokalnego środowiska
+
+Jeśli projekt nie jest aplikacją, opisz główny sposób użycia repozytorium, np. komendy CLI, workflow dokumentacyjne albo procedury operacyjne.
 
 ## Licencja
 
-Do ustalenia.
+MIT. Szczegóły w pliku `LICENSE`.
