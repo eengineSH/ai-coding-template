@@ -24,6 +24,8 @@ Ten plik jest mapą instrukcji operacyjnych (runbooków) dla agenta.
   - Ogólna procedura diagnostyki błędów CI.
 - `docs/runbooks/006-przygotowanie-issue-i-specyfikacji.md`
   - Ogólna procedura przygotowania i weryfikacji issue oraz wstępnej specyfikacji.
+- `docs/runbooks/007-atomowe-commity.md`
+  - Ogólna procedura dzielenia zmian na atomowe, logiczne commity.
 - `docs/runbooks/*.md`
   - Poszczególne runbooki (jeden plik na jeden proces/obszar).
 

@@ -6,4 +6,5 @@
 2. Pracuj na osobnym branchu.
 3. Otwieraj Pull Request do głównego brancha projektu.
 4. Opisz zakres, weryfikację i ryzyka.
-5. Nie dodawaj sekretów ani danych produkcyjnych.
+5. Dziel zmiany na atomowe commity, gdy zakres obejmuje kilka niezależnych części.
+6. Nie dodawaj sekretów ani danych produkcyjnych.

@@ -11,6 +11,7 @@ Katalog zawiera runbooki, czyli powtarzalne instrukcje operacyjne dla agenta.
 - `004-release-deploy-checklista.md` - ogólna checklista release/deploy.
 - `005-diagnostyka-ci.md` - ogólna diagnostyka CI.
 - `006-przygotowanie-issue-i-specyfikacji.md` - ogólne przygotowanie i weryfikacja issue oraz wstępnej specyfikacji.
+- `007-atomowe-commity.md` - ogólne dzielenie zmian na atomowe, logiczne commity.
 - `*.md` - runbooki dla konkretnych procesów.
 
 ## Jak używać

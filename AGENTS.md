@@ -117,5 +117,9 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 - Poza sytuacjami wyjątkowymi nie robię commitów bezpośrednio do `main`.
   - jeśli człowiek prosi o commit/push do `main`, traktuję to jako nadpisanie tej zasady (patrz zasada `Nadpisywanie wytycznych`)
 - Każdy commit przygotowuję jako możliwie mały i atomowy; zasada dotyczy także commitów inicjowanych skrótami (`c`, `c+p`, `c+p+pr`).
+- Przy commitowaniu stosuj runbook `docs/runbooks/007-atomowe-commity.md`.
+- Jeśli zakres pracy naturalnie dzieli się na niezależne części, przygotuj kilka commitów zamiast jednego zbiorczego.
+- Nie mieszaj w jednym commicie niepowiązanych zmian, np. poprawki błędu, refaktoru, dokumentacji i konfiguracji.
+- Jeden push może zawierać serię atomowych commitów.
 - Każdy commit ma nazwę i krótki opis zmian.
 - Opis commita zawiera informację, na podstawie jakiej specyfikacji wykonano pracę (plik/spec lub issue) i zawiera do niej odniesienie.
