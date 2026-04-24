@@ -5,6 +5,11 @@ Katalog zawiera runbooki, czyli powtarzalne instrukcje operacyjne dla agenta.
 ## Zawartość
 
 - `AGENTS.md` - zasady tworzenia i mapa runbooków.
+- `001-pr-review.md` - ogólny przegląd Pull Requesta.
+- `002-smoke-test-po-zmianach.md` - ogólny smoke test po zmianach.
+- `003-obsluga-issue-api.md` - ogólna obsługa issue przez API.
+- `004-release-deploy-checklista.md` - ogólna checklista release/deploy.
+- `005-diagnostyka-ci.md` - ogólna diagnostyka CI.
 - `*.md` - runbooki dla konkretnych procesów.
 
 ## Jak używać

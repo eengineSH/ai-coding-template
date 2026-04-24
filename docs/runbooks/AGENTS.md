@@ -12,6 +12,16 @@ Ten plik jest mapą instrukcji operacyjnych (runbooków) dla agenta.
 
 - `docs/runbooks/AGENTS.md`
   - Indeks i zasady tworzenia runbooków.
+- `docs/runbooks/001-pr-review.md`
+  - Ogólna procedura przeglądu Pull Requesta.
+- `docs/runbooks/002-smoke-test-po-zmianach.md`
+  - Ogólna procedura smoke testu po zmianach.
+- `docs/runbooks/003-obsluga-issue-api.md`
+  - Ogólna procedura obsługi issue przez API.
+- `docs/runbooks/004-release-deploy-checklista.md`
+  - Ogólna checklista release/deploy.
+- `docs/runbooks/005-diagnostyka-ci.md`
+  - Ogólna procedura diagnostyki błędów CI.
 - `docs/runbooks/*.md`
   - Poszczególne runbooki (jeden plik na jeden proces/obszar).
 
@@ -19,6 +29,7 @@ Ten plik jest mapą instrukcji operacyjnych (runbooków) dla agenta.
 
 - Twórz jeden runbook na jedną procedurę.
 - Stosuj nazwy opisowe, np. `obsluga-issue.md`, `przygotowanie-pr.md`.
+- Runbooki w tym template są celowo syntetyczne i nie zawierają założeń konkretnego projektu.
 - Każdy runbook powinien zawierać:
   - cel i zakres procedury,
   - wymagania wejściowe (uprawnienia, tokeny, narzędzia),

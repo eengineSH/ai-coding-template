@@ -23,8 +23,8 @@ Jak pobrać token API w Forgejo:
 
 - Token przekazujemy przez nagłówek:
   - `Authorization: token <FORGEJO_TOKEN>`
-- Bazowy URL API:
-  - `https://git.iphoenix.pl/api/v1`
+- Bazowy URL API wynika z `FORGEJO_BASE_URL`, np.:
+  - `https://forgejo.example.com/api/v1`
 
 ## Konfiguracja lokalna
 
@@ -32,7 +32,7 @@ Jak pobrać token API w Forgejo:
    - `cp .env.example .env`
 2. Uzupełnij token w `FORGEJO_TOKEN`.
 3. Załaduj zmienne środowiskowe:
-   - `set -a; source .env; set +a`
+   - `source scripts/load_env.sh .env`
 
 Uwagi:
 

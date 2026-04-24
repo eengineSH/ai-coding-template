@@ -14,8 +14,8 @@ Uzycie:
 
 Wymagane zmienne srodowiskowe:
   GITHUB_BASE_URL  np. https://api.github.com
-  GITHUB_OWNER     np. eEngineSoftwareHouse
-  GITHUB_REPO      np. ansible
+  GITHUB_OWNER     np. your-org-or-user
+  GITHUB_REPO      np. your-repository
   GITHUB_TOKEN     token API GitHub
 USAGE
   exit 0
@@ -33,7 +33,7 @@ done
 : "${GITHUB_REPO:?Brak GITHUB_REPO}"
 : "${GITHUB_TOKEN:?Brak GITHUB_TOKEN}"
 
-if [[ "${GITHUB_TOKEN}" == wklej_* ]]; then
+if [[ "${GITHUB_TOKEN}" == wklej_* || "${GITHUB_TOKEN}" == replace_with_* ]]; then
   echo "GITHUB_TOKEN wyglada na placeholder. Ustaw prawidlowy token API GitHub w .env." >&2
   exit 1
 fi
