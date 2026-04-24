@@ -1,0 +1,40 @@
+name: Feature
+description: Zaproponuj nową funkcjonalność albo istotne rozszerzenie.
+title: "[Feature]: "
+labels: []
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Cel
+      description: Jaki problem użytkownika lub projektu rozwiązuje zmiana?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Zakres
+      description: Co powinno zostać zrobione?
+    validations:
+      required: true
+  - type: textarea
+    id: use_cases
+    attributes:
+      label: Przypadki użycia
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Kryteria akceptacji
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Dodatkowe informacje
+    validations:
+      required: false

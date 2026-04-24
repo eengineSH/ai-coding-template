@@ -21,6 +21,7 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 
 ## Dokumentacja
 
+- Przy starcie nowego kontekstu najpierw sprawdź `docs/followups.md`, jeśli plik istnieje.
 - Dla agenta źródłem prawdy są pliki `AGENTS.md`.
 - Informacje dla agentów zapisuj w `AGENTS.md` najbliższym zakresowi danej funkcji/obszaru; globalny `AGENTS.md` traktuj jako miejsce na zasady przekrojowe, gdy nie ma bardziej adekwatnego pliku.
 - Szczegóły techniczne integracji (np. API, tokeny, workflow agenta) zapisuj w `docs/`.
@@ -28,9 +29,13 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 - Dokumentacji integracji API szukaj w `docs/apis/`, a ich indeks i zasady w `docs/apis/AGENTS.md`.
 - Specyfikacji funkcjonalności szukaj w `docs/specs/`, a ich indeks i zasady w `docs/specs/AGENTS.md`.
 - Runbooków operacyjnych szukaj w `docs/runbooks/`, a ich indeks i zasady w `docs/runbooks/AGENTS.md`.
+- Skille agenta, jeśli projekt zdecyduje się ich używać, opisuj w `docs/skills/`.
 - Nazwy plików instrukcji zapisuj dokładnie jako `AGENTS.md` (wielkie `AGENTS`, małe `.md`).
 - W plikach `AGENTS.md` nie twórz odniesień do plików `README.md`.
 - W każdym folderze projektu powinien istnieć plik `README.md` opisujący zawartość folderu oraz informacje o podkatalogach.
+- Pliki `AGENTS.md` są przeznaczone dla agentów i automatyzacji.
+- Pliki `README.md` są przeznaczone dla człowieka.
+- Nie duplikuj semantycznie tych samych zasad w `AGENTS.md` i `README.md`; jeśli trzeba coś doprecyzować, ujednolić istniejący wpis zamiast dopisywać równoległy.
 - Dodawaj krótkie komentarze tylko tam, gdzie logika nie jest oczywista.
 
 ## Komunikacja zmian
@@ -70,11 +75,12 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 
 ### Repozytorium i narzędzia
 
-- Główne repozytorium (origin): `https://github.com/eengineSH/ai-coding-template`.
-- Oprogramowanie hostujące (origin): `GitHub`.
+- Główne repozytorium ustalaj z `git remote -v`.
+- Oprogramowanie hostujące rozpoznawaj po `origin` albo po wskazaniu człowieka.
 - Operacje na issues wykonujemy przez API:
   - GitHub (domyślnie): `scripts/github-issues.sh`
   - Forgejo (gdy dotyczy repo na Forgejo): `scripts/forgejo-issues.sh`
+- Sekrety i tokeny ładuj przez helper `scripts/load_env.sh` albo przez jawnie wskazane zmienne środowiskowe; nie wypisuj tokenów na stdout.
 
 ### Skróty poleceń
 
@@ -94,9 +100,9 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 
 ### Specyfikacje a issue
 
-- Jeśli zadanie ma issue na Forgejo i wymaga specyfikacji, to specyfikacja ma powstać jako komentarz do danego issue (nie w `docs/specs/`).
-- Jeśli specyfikacja jest w komentarzu i prosisz o jej poprawę, edytuję istniejący komentarz (nie dodaję nowego).
-- Jeśli nie ma issue, a potrzebna jest specyfikacja, to najpierw pytam gdzie ją umieścić (issue vs `docs/specs/`) i czy wcześniej nie założyć pod to nowego issue.
+- Jeśli zadanie ma issue i wymaga specyfikacji, dopasuj miejsce specyfikacji do zasad projektu.
+- Gdy projekt nie ma własnej decyzji, domyślnym miejscem roboczym jest `docs/specs/`.
+- Specyfikacja nie oznacza automatycznej zgody na implementację, jeśli człowiek nie poprosił wprost o realizację.
 
 ### Issue (tworzenie i triage)
 

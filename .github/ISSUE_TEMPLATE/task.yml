@@ -1,0 +1,33 @@
+name: Task
+description: Zgłoś zadanie techniczne, dokumentacyjne albo operacyjne.
+title: "[Task]: "
+labels: []
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Kontekst
+      description: Dlaczego to zadanie jest potrzebne?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Zakres prac
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Warunek ukończenia
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Ryzyka lub zależności
+    validations:
+      required: false

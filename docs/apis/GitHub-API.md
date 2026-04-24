@@ -38,7 +38,7 @@ Jak pobrać token API w GitHub:
    - `GITHUB_REPO`
    - `GITHUB_TOKEN`
 3. Załaduj zmienne środowiskowe:
-   - `set -a; source .env; set +a`
+   - `source scripts/load_env.sh .env`
 
 Uwagi:
 
@@ -86,10 +86,11 @@ Uwagi praktyczne:
 - Nie commitujemy `.env` ani tokenów.
 - Token musi mieć uprawnienia do odczytu i zapisu issues w repo docelowym.
 
-## Wyniki testów
+## Test kontrolny
 
-- Data testu: `2026-02-11`
-- Zakres testu: `whoami`, `issue-create`, `issue-get`, `issue-comment`, `issue-close`, `issue-open`, `issues-list`.
-- Repo testowe: `eengineSH/ai-coding-template`
-- Wynik dla konfiguracji z `.env`: `PASS`
-- Utworzone i domknięte testowe issue: `#1`
+Po uzupełnieniu konfiguracji wykonaj:
+
+1. `scripts/github-issues.sh whoami`
+2. `scripts/github-issues.sh issues-list open`
+
+Operacje zapisu na realnym repo wykonuj dopiero po świadomej decyzji człowieka albo zgodnie z zasadami projektu.

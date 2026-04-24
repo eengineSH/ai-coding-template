@@ -13,9 +13,9 @@ Uzycie:
   scripts/forgejo-issues.sh issue-close <nr>
 
 Wymagane zmienne srodowiskowe:
-  FORGEJO_BASE_URL  np. https://git.iphoenix.pl
-  FORGEJO_OWNER     np. fizol
-  FORGEJO_REPO      np. ai-coding-template
+  FORGEJO_BASE_URL  np. https://forgejo.example.com
+  FORGEJO_OWNER     np. your-org-or-user
+  FORGEJO_REPO      np. your-repository
   FORGEJO_TOKEN     token API Forgejo
 USAGE
   exit 0
@@ -32,6 +32,11 @@ done
 : "${FORGEJO_OWNER:?Brak FORGEJO_OWNER}"
 : "${FORGEJO_REPO:?Brak FORGEJO_REPO}"
 : "${FORGEJO_TOKEN:?Brak FORGEJO_TOKEN}"
+
+if [[ "${FORGEJO_TOKEN}" == wklej_* || "${FORGEJO_TOKEN}" == replace_with_* ]]; then
+  echo "FORGEJO_TOKEN wyglada na placeholder. Ustaw prawidlowy token API Forgejo w .env." >&2
+  exit 1
+fi
 
 BASE="${FORGEJO_BASE_URL%/}/api/v1"
 REPO_PATH="/repos/${FORGEJO_OWNER}/${FORGEJO_REPO}"
