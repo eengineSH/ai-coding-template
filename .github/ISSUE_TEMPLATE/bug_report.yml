@@ -11,6 +11,13 @@ body:
     validations:
       required: true
   - type: textarea
+    id: impact
+    attributes:
+      label: Wpływ
+      description: Kogo dotyczy błąd i jak poważny jest skutek?
+    validations:
+      required: true
+  - type: textarea
     id: steps
     attributes:
       label: Kroki odtworzenia
@@ -39,7 +46,7 @@ body:
       label: Środowisko
       description: Wersja aplikacji, branch, commit, przeglądarka, system lub inne istotne dane.
     validations:
-      required: false
+      required: true
   - type: textarea
     id: logs
     attributes:
@@ -47,3 +54,16 @@ body:
       render: shell
     validations:
       required: false
+  - type: checkboxes
+    id: completeness
+    attributes:
+      label: Kontrola kompletności
+      options:
+        - label: Opis wskazuje faktyczne zachowanie i skutek.
+          required: true
+        - label: Kroki odtworzenia są możliwe do wykonania przez osobę trzecią.
+          required: true
+        - label: Oczekiwany i faktyczny wynik są rozdzielone.
+          required: true
+        - label: Podano środowisko albo wyjaśniono, dlaczego nie da się go ustalić.
+          required: true

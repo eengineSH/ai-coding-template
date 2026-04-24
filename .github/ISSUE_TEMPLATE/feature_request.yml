@@ -11,6 +11,13 @@ body:
     validations:
       required: true
   - type: textarea
+    id: context
+    attributes:
+      label: Kontekst
+      description: Co obecnie nie działa, czego brakuje albo co ma zostać usprawnione?
+    validations:
+      required: true
+  - type: textarea
     id: scope
     attributes:
       label: Zakres
@@ -25,11 +32,25 @@ body:
         1. ...
         2. ...
     validations:
+      required: true
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Poza zakresem
+      description: Czego to issue świadomie nie obejmuje?
+    validations:
       required: false
   - type: textarea
     id: acceptance
     attributes:
       label: Kryteria akceptacji
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Weryfikacja
+      description: Jak sprawdzić, że zmiana działa poprawnie?
     validations:
       required: false
   - type: textarea
@@ -38,3 +59,14 @@ body:
       label: Dodatkowe informacje
     validations:
       required: false
+  - type: checkboxes
+    id: completeness
+    attributes:
+      label: Kontrola kompletności
+      options:
+        - label: Cel opisuje problem, a nie tylko proponowane rozwiązanie.
+          required: true
+        - label: Zakres i przypadki użycia są wystarczające do przygotowania specyfikacji.
+          required: true
+        - label: Kryteria akceptacji są możliwe do zweryfikowania.
+          required: true

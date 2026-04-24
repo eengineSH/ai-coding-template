@@ -107,6 +107,9 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 ### Issue (tworzenie i triage)
 
 - Przy zgłaszaniu bugów nie pomijam szczegółów z opisu (dokładne komendy/skrypty, pełny komunikat błędu).
+- Przy tworzeniu albo weryfikacji issue stosuj runbook `docs/runbooks/006-przygotowanie-issue-i-specyfikacji.md`.
+- Jeśli istniejące issue jest niekompletne, wypisz brakujące elementy w punktach zamiast zgadywać.
+- Issue powinno mieć cel, kontekst, zakres, kryteria akceptacji albo warunek ukończenia oraz sposób weryfikacji odpowiedni do typu zgłoszenia.
 
 ### PR i branchowanie (Git Flow)
 
