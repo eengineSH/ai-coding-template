@@ -4,14 +4,14 @@ Repozytorium startowe dla projektów, w których człowiek i agenci AI mają pra
 
 ## Zawartość
 
-- `AGENTS.md` - zasady pracy dla agentów i automatyzacji.
-- `.github/` - szablony GitHuba, Pull Requestów, issue, instrukcje Copilota i pliki community health.
-- `docs/` - dokumentacja operacyjna i techniczna projektu.
-- `docs/apis/` - dokumentacja integracji API.
-- `docs/specs/` - specyfikacje zmian i funkcjonalności.
-- `docs/runbooks/` - syntetyczne procedury operacyjne.
-- `docs/skills/` - puste miejsce na przyszłe skille agenta.
-- `scripts/` - helpery do pracy z API i środowiskiem.
+- [`AGENTS.md`](AGENTS.md) - zasady pracy dla agentów i automatyzacji.
+- [`.github/`](.github/) - szablony GitHuba, Pull Requestów, issue, instrukcje Copilota i pliki community health.
+- [`docs/`](docs/) - dokumentacja operacyjna i techniczna projektu.
+- [`docs/apis/`](docs/apis/) - dokumentacja integracji API.
+- [`docs/specs/`](docs/specs/) - specyfikacje zmian i funkcjonalności.
+- [`docs/runbooks/`](docs/runbooks/) - syntetyczne procedury operacyjne.
+- [`docs/skills/`](docs/skills/) - puste miejsce na przyszłe skille agenta.
+- [`scripts/`](scripts/) - helpery do pracy z API i środowiskiem.
 
 ## Szybki start
 
@@ -39,33 +39,33 @@ Alternatywnie możesz użyć GitHuba i opcji "Use this template", jeśli tworzys
 
 Podczas adaptacji nie chodzi o mechaniczne skopiowanie wszystkich plików. Celem jest dopasowanie zasad pracy agentowej do konkretnego projektu.
 
-1. `AGENTS.md`
+1. [`AGENTS.md`](AGENTS.md)
    a) zostaw tylko zasady, które mają obowiązywać w projekcie
    b) dopisz język komunikacji, git flow, zasady commitów, proces specyfikacji i ograniczenia środowiskowe
    c) przenieś zasady lokalne do najbliższego folderu, którego dotyczą
-   d) unikaj duplikatów semantycznych między głównym `AGENTS.md` i plikami podrzędnymi
-2. `.github/`
+   d) unikaj duplikatów semantycznych między głównym [`AGENTS.md`](AGENTS.md) i plikami podrzędnymi
+2. [`.github/`](.github/)
    a) dopasuj szablony issue do realnego procesu triage
    b) dopasuj Pull Request template do wymaganej weryfikacji
    c) uzupełnij instrukcje Copilota o technologie, wersje środowiska i zasady code review
-   d) usuń `CODEOWNERS`, `SECURITY.md`, `SUPPORT.md`, Dependabot albo inne pliki, jeśli projekt nie ma dla nich realnej treści
-3. `docs/specs/`
+   d) usuń [`.github/CODEOWNERS`](.github/CODEOWNERS), [`.github/SECURITY.md`](.github/SECURITY.md), [`.github/SUPPORT.md`](.github/SUPPORT.md), Dependabot albo inne pliki, jeśli projekt nie ma dla nich realnej treści
+3. [`docs/specs/`](docs/specs/)
    a) zostaw, jeśli projekt wymaga specyfikacji przed implementacją
    b) ustal schemat numeracji i kryteria akceptacji
    c) usuń katalog, jeśli projekt prowadzi specyfikacje wyłącznie w issue
-4. `docs/runbooks/`
+4. [`docs/runbooks/`](docs/runbooks/)
    a) dopisuj tylko powtarzalne procedury, które naprawdę będą używane
    b) usuwaj runbooki generyczne, jeśli nie pasują do procesu projektu
-5. `docs/apis/`
+5. [`docs/apis/`](docs/apis/)
    a) zostaw dokumentację tylko tych integracji, których projekt używa
    b) usuń GitHub albo Forgejo, jeśli nie są potrzebne
-6. `docs/skills/`
+6. [`docs/skills/`](docs/skills/)
    a) zostaw puste, dopóki projekt nie potrzebuje własnych skilli agenta
    b) dodawaj skille dopiero dla powtarzalnych workflow
-7. `scripts/`
+7. [`scripts/`](scripts/)
    a) zostaw helpery, które będą realnie używane
    b) usuń skrypty związane z niewykorzystywanymi integracjami
-8. `.env.example`
+8. [`.env.example`](.env.example)
    a) uzupełnij tylko zmienne konfiguracyjne bez sekretów
    b) usuń zmienne dla nieużywanych integracji
 
@@ -86,4 +86,4 @@ Jeśli projekt nie jest aplikacją, opisz główny sposób użycia repozytorium,
 
 ## Licencja
 
-MIT. Szczegóły w pliku `LICENSE`.
+MIT. Szczegóły w pliku [`LICENSE`](LICENSE).

@@ -35,6 +35,7 @@ Ten plik definiuje podstawowe zasady dla agentów (AI i automatyzacji) pracując
 - W każdym folderze projektu powinien istnieć plik `README.md` opisujący zawartość folderu oraz informacje o podkatalogach.
 - Pliki `AGENTS.md` są przeznaczone dla agentów i automatyzacji.
 - Pliki `README.md` są przeznaczone dla człowieka.
+- W plikach `README.md` linkuj lokalne pliki i katalogi zwykłymi linkami Markdown, gdy tylko realnie ułatwia to człowiekowi nawigację po repozytorium.
 - Nie duplikuj semantycznie tych samych zasad w `AGENTS.md` i `README.md`; jeśli trzeba coś doprecyzować, ujednolić istniejący wpis zamiast dopisywać równoległy.
 - Dodawaj krótkie komentarze tylko tam, gdzie logika nie jest oczywista.
 

@@ -4,7 +4,7 @@ Katalog jest pustym miejscem na przyszłe skille agenta AI.
 
 ## Zawartość
 
-- `AGENTS.md` - zasady dla agentów dotyczące tego katalogu.
+- [`AGENTS.md`](AGENTS.md) - zasady dla agentów dotyczące tego katalogu.
 
 ## Kiedy dodawać skill
 
