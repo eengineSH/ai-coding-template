@@ -1,5 +1,1 @@
 blank_issues_enabled: true
-contact_links:
-  - name: Pytanie lub dyskusja
-    url: https://github.com/OWNER/REPOSITORY/discussions
-    about: Użyj dyskusji, jeśli temat nie jest jeszcze konkretnym bugiem, featurem ani taskiem.

@@ -26,8 +26,26 @@ body:
     validations:
       required: true
   - type: textarea
+    id: verification
+    attributes:
+      label: Weryfikacja
+      description: Jak sprawdzić wykonanie zadania?
+    validations:
+      required: true
+  - type: textarea
     id: risks
     attributes:
       label: Ryzyka lub zależności
     validations:
       required: false
+  - type: checkboxes
+    id: completeness
+    attributes:
+      label: Kontrola kompletności
+      options:
+        - label: Zakres prac jest rozbity na konkretne punkty.
+          required: true
+        - label: Warunek ukończenia jest jednoznaczny.
+          required: true
+        - label: Sposób weryfikacji jest opisany.
+          required: true
